@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link id="styles-color" rel="stylesheet" href="css/style-day.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="nav_logo">
+            <a href="index.html"><img id="brand" src="img/gifof_logo.png" alt="GifOS"/></a>
+            <nav>
+                <ul>
+                    <li class="button-1"><a href="crear-gifos.html">Crear Gifos</a></li>
+                    <li class="button-2">
+                            <label for="btn-theme" class="bg-label-1">Elegir tema</label>
+                        <ul>
+                            <li class="li-desplegable desplegable">
+                                    <input type="checkbox" id="btn-theme">
+                                    <label for="btn-theme" class="bg-label" id="btn-theme2"><img src="img/dropdown.svg" alt=""></label>
+                                    <ul class="theme" id="theme">
+                                        <li id="day" class="button-day">Sailor Day</li>
+                                        <li id="night" class="button-night">Sailor Night</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mis-gifos"><a class="mis-gifos" href="mis-guifos.html">Mis Gifos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="buscador">
+            <form>
+                <label>Buscar</label>
+                <div>
+                    <input type="text" name="search" id="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                    <button type="button" id="btn-search" class="btn-buscar" disabled>Buscar</button>
+                </div>
+            </form>
+            <div class="cont-autocompletes hidden" id="cont-autocompletes">
+                <div class="autocompletes" id="autocompletes">
+                    <button id="autocomplete1"></button>
+                    <button id="autocomplete2"></button>
+                    <button id="autocomplete3"></button>
+                </div>
+            </div>
+            <div class="cont-terminos-relacionados hidden" id="cont-terminos-relacionados">
+                <div class="terminos-relacionados" id="terminos-relacionados">
+                    <button id="termino-uno">termino 1</button>
+                    <button id="termino-dos">termino 2 mas largo</button>
+                    <button id="termino-tres">termino 3 mas largo</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section class="busquedas hidden" id="busquedas">
+            <h1 id="resultados"></h1>
+            <div class="contenido-busquedas" id="contenido-busquedas">
+                
+            </div>
+        </section>
+
+        <section class="sugerencias" id="section-sugerencias">
+            <h1>Hoy te sugerimos:</h1>
+            <div class="contenido-sugerencias" id="sugerencias">
+            </div>
+        </section>
+
+        <section class="tendencias" id="section-tendencias">
+            <h1>Tendencias</h1>
+            <div class="contenido-tendencias" id="trending">
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/function.js"></script>    
+</body>
+</html>

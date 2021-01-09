@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link id="styles-color" rel="stylesheet" href="css/style-day.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="nav_logo2">
+            <a href="crear-gifos.html"><img src="img/arrow.svg" alt="Volver" class="back"></a>
+            <a href="index.html"><img id="brand" src="img/gifof_logo.png" alt="GifOS"/></a>
+        </div>
+    </header>
+    <main id="main" class="main-gifos">
+        <section class="crear" id="crear">
+
+                <div class="comenzar-gif2" id="crear-gif">
+                    <div class="info info2">
+                        <h3 id="upload-h3">Un Chequeo Antes de Empezar</h3>
+                        <button id="exit-upload"><img src="img/button3.svg" alt="Cerrar"></button>
+                    </div>
+                    <div class="video">
+                        <video class="capturar-gif" id="video"></video>
+                        <video class="capturar-gif hidden" id="video-preview"></video>
+                        <img alt="Gif" src="" class="capturar-gif hidden" id="video-gif">
+                        
+                        <!-- instancia 1 -->
+                        <div class="button-capturar" id="inst1">
+                            <button class="camera" onclick="getStreamAndRecord()"></button>
+                            <button class="capturar" id="capturar">Capturar</button>
+                        </div>
+
+                        <!-- instancia 2 -->
+                        <div class="button-listo hidden" id="inst2">
+                            <div class="timer">
+                                <p>00:00:03:06</p>
+                            </div>
+                            <div class="buttons">
+                                <button class="recording"><img src="img/recording.svg" alt="Grabar"></button>
+                                <button class="listo" id="detener">Listo</button>
+                            </div>
+                        </div>
+
+                        <!-- instancia 3 -->
+                        <div class="button-listo hidden" id="inst3">
+                            <div class="time">
+                                <div class="timer">
+                                    <p id="duracion">00:00:03:06</p>
+                                </div>
+                                <div class="grabar-gif">
+                                    <button class="grabar" id="play"><img src="img/forward.svg" alt="Grabar"></button>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="repetir" id="repetir">Repetir Captura</button>
+                                <button class="capturar" id="subir">Subir Guifo</button>
+                            </div>
+                        </div>
+
+                        <!-- instancia 4 -->
+                        <div class="hidden" id="inst4">
+                            <div class="capturar-gif subiendo-gif">
+                                <img src="img/globe_img.png" alt="Subiendo gif">
+                                <h4>Estamos subiendo tu guifo…</h4>
+                                <progress class="progress-bar" value="70" max="100"></progress>
+                                <p>Tiempo restante: <span>38 años</span> algunos minutos</p>
+                            </div>
+                            <div class="button-listo2">
+                                <div class="buttons">
+                                    <button class="cancelar2" id="cancelar2">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- instancia 5 -->
+                <div class="inst5 hidden" id="inst5">
+                    <div class="info info2">
+                        <h3>Guifo Subido Con Éxito</h3>
+                        <button id="exit-gif"><img src="img/button3.svg" alt="Cerrar"></button>
+                    </div>
+                    <div class="gif-creado">
+                        <img src="" alt="Mi nuevo gif" id="mi-nuevo-gif">
+                        <div class="gif-creado-buttons">
+                            <p>Guifo creado con éxito</p>
+                            <button class="copiar" id="copiar">Copiar Enlace Guifo</button>
+                            <button class="descargar" id="descargar">Descargar Guifo</button>
+                            <button class="gif-creado-listo" id="listo">Listo</button>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+    <script src="js/recordtRTC.js"></script>
+    <script src="js/video-function.js"></script>
+</body>
+</html>

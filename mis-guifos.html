@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gifOS</title>
+    <link id="styles-color" rel="stylesheet" href="css/style-day.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+        <div class="nav_logo">
+            <a href="index.html">
+                <img id="brand" src="img/gifof_logo.png" alt="GifOS"/>
+            </a>
+            <nav>
+                <ul>
+                    <li class="button-1"><a href="crear-gifos.html">Crear Gifos</a></li>
+                    <li class="button-2">
+                            <label for="btn-theme" class="bg-label-1">Elegir tema</label>
+                        <ul>
+                            <li class="li-desplegable desplegable">
+                                    <input type="checkbox" id="btn-theme">
+                                    <label for="btn-theme" class="bg-label" id="btn-theme2"><img src="img/dropdown.svg" alt=""></label>
+                                    <ul class="theme" id="theme">
+                                        <li id="day" class="button-day">Sailor Day</li>
+                                        <li id="night" class="button-night">Sailor Night</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mis-gifos"><a class="mis-gifos" href="mis-guifos.html">Mis Gifos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="main-gifos">   
+        <!-- MIS GIFOS -->
+        <section class="gifos" id="mis-gifos">
+            <h1>Mis guifos</h1>
+            <div class="contenido-gifos" id="contenido-gifos">
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="js/misgifos-function.js"></script>    
+</body>
+</html>

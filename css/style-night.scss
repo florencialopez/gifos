@@ -1,0 +1,299 @@
+$primary: #EE3EFE;
+$primary2: #EE3EFE;
+$primary3: #110038;
+$secondary: #4180F6;
+$secondary3: #284F99;
+$secondary2: #110038;
+$tertiary: #4C2F99;
+$grey: #8F8F8F;
+$light-grey: #b4b4b4;
+$typography: #fff;
+$body: #110038;
+$gradient: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+$shadow: 0 1px 0 0 #110038;
+
+button {
+    background-color: transparent;
+}
+
+h3 {
+    color: #fff;
+}
+
+body {
+    background-color: $body;
+    color: $typography;
+    //border: 1px solid #fff;
+    header {
+        .welcome{
+            background-image: $gradient;
+            box-shadow: $shadow;
+        }
+        nav {
+            ul {
+                .button-1, .button-2 {
+                    a, .bg-label, .bg-label-1{
+                        border: 1px solid $secondary2;
+                        box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $secondary2;
+                        background-color: $primary2;
+                        color: $typography;
+                        &:hover {
+                        outline: 1px dotted $secondary2;
+                        outline-offset: -4px;
+                        background-color: #CE36DB;
+                        }
+                        &:active {
+                            outline: 1px dotted $secondary2;
+                            outline-offset: -4px;
+                            background-color: #CE36DB;
+                        }
+                    }
+                }
+
+                .theme {
+                    background-color: $grey;
+                    box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px $grey;
+                    .button-night {
+                        border: 1px solid rgba(51, 53, 143, 0.2) !important;
+                        box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #E6DCE4 !important;
+                        background-color: #2E32FB !important;
+                        color: #fff !important;
+                    }
+                    .button-day {
+                        background-color: #ccc;
+                        border: 1px solid #808080;
+                        box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+                        color: $primary3;
+                    }
+                }
+
+                .bg-label {
+                    border-top: 1px solid $secondary2;
+                    border-right: 1px solid $secondary2;
+                    border-bottom: 1px solid $secondary2;
+                }
+                .mis-gifos {
+                    color: $typography;
+                    &:hover{
+                        outline: 1px dotted #fff;
+                        outline-offset: 5px;
+                    }
+                    &:active {
+                        opacity: 0.5;
+                        outline: 0px;
+                    }
+                    &:first-child {
+                        border-bottom-color: $typography;
+                    }
+                }
+            }
+        }
+
+        .buscador {
+            form {
+                box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+                padding: 2px;
+                label {
+                    background-image: $gradient;
+                }
+                div {
+                    background-color: $light-grey;
+                    input {
+                        color: $primary3;
+                        border: 1px solid #979797;
+                        box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px $grey;
+                        /*&:focus ~ .btn-buscar {
+                            background-color: $primary;
+                            color: #fff;
+                            background-image: url(../img/lupa_light.svg);
+                        }*/
+                    }
+                    button {
+                        color: $grey;
+                        background-color: #cfcfcf;
+                        border: 1px solid #808080;
+                        box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $light-grey;
+                        background-image: url(../img/lupa_inactive_night.svg);
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        &:active {
+                            background-color: $primary;
+                            color: #fff;
+                            outline: 1px dotted $secondary2;
+                            outline-offset: -4px;
+                            background-image: url(../img/lupa_light.svg);
+                        }
+                        &:disabled {
+                            color: $grey;
+                            background-color: #cfcfcf;
+                            border: 1px solid #808080;
+                            box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $light-grey;
+                            background-image: url(../img/lupa_inactive_night.svg);
+                        }
+                        &:enabled {
+                            background-color: $primary;
+                            color: #fff;
+                            background-image: url(../img/lupa_light.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //autocomplete
+    .autocompletes {
+        box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+        background-color: $light-grey;
+            button {
+                border: 1px solid #808080;
+                box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $light-grey;
+                color: $primary3;
+                background-color: #ccc;
+                &:hover {
+                    outline: 1px dotted $primary3;
+                    outline-offset: -4px;
+                }
+            }
+    }
+
+    h1 {
+        color: $secondary2;
+        box-shadow: inset 2px 2px 0px $primary3, inset -2px -2px 0px #e6dce4;
+        border: 1px solid #2E32FB;
+        background-color: #FFFAFE;
+    }
+
+    .sugerencia, .gif, .comenzar-gif, .comenzar-gif2, .inst5 /*.busqueda1, .busqueda2*/ {
+        padding: 2px;
+        box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px $grey;
+        background-color: $light-grey;
+        color: $primary3;
+        .info {
+            padding: 1px;
+            background-image: $gradient;
+            border: 1px solid $grey;
+        }
+        .img {
+            border: 1px solid $grey;
+            img {
+                &:hover {
+                    outline: 1px dotted $secondary2;
+                    outline-offset: -2px;
+                }
+            }
+            a {
+                color: #fff;
+                background-color: $secondary;
+                box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px $secondary3;
+                border: 1px solid $tertiary;
+                &:hover {
+                    outline: 1px dotted $secondary2;
+                    outline-offset: -4px;
+                }
+            }
+        }
+    }
+
+    .hashtag {
+        padding: 3px;
+        background-image: $gradient;
+    }
+}
+
+//doble hover
+.button-2 {
+    &:hover {
+        .bg-label, .bg-label-1 {
+            outline: 1px dotted $secondary2;
+            outline-offset: -4px;
+            background-color: #CE36DB;
+        }
+    }
+    &:active {
+        .bg-label, .bg-label-1 {
+            outline: 1px dotted $secondary2;
+            outline-offset: -4px;
+            background-color: #CE36DB;
+        }
+    }
+}
+
+/* crear gifos */
+.contenido {
+    background-color: $grey;
+    color: $secondary2;
+}
+
+.cancelar, .cancelar2 {
+    background-color: #fff4fd;
+    color: $secondary2;
+    border: 1px solid $secondary2;
+    box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $grey;
+}
+
+.comenzar {
+    background-color: $primary;
+    color: $secondary2;
+    border: 1px solid $secondary2;
+    box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px $primary2;
+}
+
+/* upload */
+.capturar-gif {
+    box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px $grey;
+    border: 1px solid #979797;
+    background-color: #ccc;
+}
+
+.camera, .capturar, .grabar {
+    background-color: $primary;
+    box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #A72CB3;
+    border: 1px solid $secondary2;
+    color: #fff;
+}
+
+.camera {
+    background-image: url(../img/camera_light.svg);
+}
+
+.timer {
+    background-color: #fff;
+    box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px $grey;
+    border: 1px solid #979797;
+    color: $secondary2;
+}
+
+.recording, .listo, .gif-creado-listo{
+    background-color: #ff6161;
+    box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #993a3a;
+    border: 1px solid $primary3;
+    color: #fff;
+}
+
+.recording {
+    background-image: url(../img/recording_dark.svg);
+}
+
+.repetir, .copiar, .descargar {
+    background-color: $primary3;
+    box-shadow: inset 1px 1px 0px #FFF4FD, inset -1px -1px 0px #5C5C5C;
+    border: 1px solid $secondary2;
+    color: #fff;
+    &:hover {
+        background-color: $primary3;
+        outline: 1px dotted #fff;
+        outline-offset: -4px;
+    }
+}
+
+//terminos relacionados de la busqueda
+.terminos-relacionados {
+    button {
+        border: 1px solid #4C2F99;
+        box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #284F99;
+        background-color: #4180F6;
+        color: #fff;
+    }
+}

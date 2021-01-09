@@ -1,0 +1,315 @@
+button {
+  background-color: transparent;
+}
+
+h3 {
+  color: #fff;
+}
+
+body {
+  background-color: #110038;
+  color: #fff;
+}
+
+body header .welcome {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+body header nav ul .button-1 a, body header nav ul .button-1 .bg-label, body header nav ul .button-1 .bg-label-1, body header nav ul .button-2 a, body header nav ul .button-2 .bg-label, body header nav ul .button-2 .bg-label-1 {
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #110038;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #110038;
+  background-color: #EE3EFE;
+  color: #fff;
+}
+
+body header nav ul .button-1 a:hover, body header nav ul .button-1 .bg-label:hover, body header nav ul .button-1 .bg-label-1:hover, body header nav ul .button-2 a:hover, body header nav ul .button-2 .bg-label:hover, body header nav ul .button-2 .bg-label-1:hover {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  background-color: #CE36DB;
+}
+
+body header nav ul .button-1 a:active, body header nav ul .button-1 .bg-label:active, body header nav ul .button-1 .bg-label-1:active, body header nav ul .button-2 a:active, body header nav ul .button-2 .bg-label:active, body header nav ul .button-2 .bg-label-1:active {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  background-color: #CE36DB;
+}
+
+body header nav ul .theme {
+  background-color: #8F8F8F;
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #8F8F8F;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #8F8F8F;
+}
+
+body header nav ul .theme .button-night {
+  border: 1px solid rgba(51, 53, 143, 0.2) !important;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #E6DCE4 !important;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #E6DCE4 !important;
+  background-color: #2E32FB !important;
+  color: #fff !important;
+}
+
+body header nav ul .theme .button-day {
+  background-color: #ccc;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+  color: #110038;
+}
+
+body header nav ul .bg-label {
+  border-top: 1px solid #110038;
+  border-right: 1px solid #110038;
+  border-bottom: 1px solid #110038;
+}
+
+body header nav ul .mis-gifos {
+  color: #fff;
+}
+
+body header nav ul .mis-gifos:hover {
+  outline: 1px dotted #fff;
+  outline-offset: 5px;
+}
+
+body header nav ul .mis-gifos:active {
+  opacity: 0.5;
+  outline: 0px;
+}
+
+body header nav ul .mis-gifos:first-child {
+  border-bottom-color: #fff;
+}
+
+body header .buscador form {
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+  padding: 2px;
+}
+
+body header .buscador form label {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+body header .buscador form div {
+  background-color: #b4b4b4;
+}
+
+body header .buscador form div input {
+  color: #110038;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+          box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+  /*&:focus ~ .btn-buscar {
+                            background-color: $primary;
+                            color: #fff;
+                            background-image: url(../img/lupa_light.svg);
+                        }*/
+}
+
+body header .buscador form div button {
+  color: #8F8F8F;
+  background-color: #cfcfcf;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+  background-image: url(../img/lupa_inactive_night.svg);
+}
+
+body header .buscador form div button:hover {
+  cursor: pointer;
+}
+
+body header .buscador form div button:active {
+  background-color: #EE3EFE;
+  color: #fff;
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  background-image: url(../img/lupa_light.svg);
+}
+
+body header .buscador form div button:disabled {
+  color: #8F8F8F;
+  background-color: #cfcfcf;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+  background-image: url(../img/lupa_inactive_night.svg);
+}
+
+body header .buscador form div button:enabled {
+  background-color: #EE3EFE;
+  color: #fff;
+  background-image: url(../img/lupa_light.svg);
+}
+
+body .autocompletes {
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #b4b4b4;
+  background-color: #b4b4b4;
+}
+
+body .autocompletes button {
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #b4b4b4;
+  color: #110038;
+  background-color: #ccc;
+}
+
+body .autocompletes button:hover {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+}
+
+body h1 {
+  color: #110038;
+  -webkit-box-shadow: inset 2px 2px 0px #110038, inset -2px -2px 0px #e6dce4;
+          box-shadow: inset 2px 2px 0px #110038, inset -2px -2px 0px #e6dce4;
+  border: 1px solid #2E32FB;
+  background-color: #FFFAFE;
+}
+
+body .sugerencia, body .gif, body .comenzar-gif, body .comenzar-gif2, body .inst5 {
+  padding: 2px;
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #8F8F8F;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #8F8F8F;
+  background-color: #b4b4b4;
+  color: #110038;
+}
+
+body .sugerencia .info, body .gif .info, body .comenzar-gif .info, body .comenzar-gif2 .info, body .inst5 .info {
+  padding: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  border: 1px solid #8F8F8F;
+}
+
+body .sugerencia .img, body .gif .img, body .comenzar-gif .img, body .comenzar-gif2 .img, body .inst5 .img {
+  border: 1px solid #8F8F8F;
+}
+
+body .sugerencia .img img:hover, body .gif .img img:hover, body .comenzar-gif .img img:hover, body .comenzar-gif2 .img img:hover, body .inst5 .img img:hover {
+  outline: 1px dotted #110038;
+  outline-offset: -2px;
+}
+
+body .sugerencia .img a, body .gif .img a, body .comenzar-gif .img a, body .comenzar-gif2 .img a, body .inst5 .img a {
+  color: #fff;
+  background-color: #4180F6;
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #284F99;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #284F99;
+  border: 1px solid #4C2F99;
+}
+
+body .sugerencia .img a:hover, body .gif .img a:hover, body .comenzar-gif .img a:hover, body .comenzar-gif2 .img a:hover, body .inst5 .img a:hover {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+}
+
+body .hashtag {
+  padding: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.button-2:hover .bg-label, .button-2:hover .bg-label-1 {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  background-color: #CE36DB;
+}
+
+.button-2:active .bg-label, .button-2:active .bg-label-1 {
+  outline: 1px dotted #110038;
+  outline-offset: -4px;
+  background-color: #CE36DB;
+}
+
+/* crear gifos */
+.contenido {
+  background-color: #8F8F8F;
+  color: #110038;
+}
+
+.cancelar, .cancelar2 {
+  background-color: #fff4fd;
+  color: #110038;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #8F8F8F;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #8F8F8F;
+}
+
+.comenzar {
+  background-color: #EE3EFE;
+  color: #110038;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #EE3EFE;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #EE3EFE;
+}
+
+/* upload */
+.capturar-gif {
+  -webkit-box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+          box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+  border: 1px solid #979797;
+  background-color: #ccc;
+}
+
+.camera, .capturar, .grabar {
+  background-color: #EE3EFE;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #A72CB3;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #A72CB3;
+  border: 1px solid #110038;
+  color: #fff;
+}
+
+.camera {
+  background-image: url(../img/camera_light.svg);
+}
+
+.timer {
+  background-color: #fff;
+  -webkit-box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+          box-shadow: inset 2px 2px 0px #000, inset -2px -2px 0px #8F8F8F;
+  border: 1px solid #979797;
+  color: #110038;
+}
+
+.recording, .listo, .gif-creado-listo {
+  background-color: #ff6161;
+  -webkit-box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #993a3a;
+          box-shadow: inset 1px 1px 0px #fff, inset -1px -1px 0px #993a3a;
+  border: 1px solid #110038;
+  color: #fff;
+}
+
+.recording {
+  background-image: url(../img/recording_dark.svg);
+}
+
+.repetir, .copiar, .descargar {
+  background-color: #110038;
+  -webkit-box-shadow: inset 1px 1px 0px #FFF4FD, inset -1px -1px 0px #5C5C5C;
+          box-shadow: inset 1px 1px 0px #FFF4FD, inset -1px -1px 0px #5C5C5C;
+  border: 1px solid #110038;
+  color: #fff;
+}
+
+.repetir:hover, .copiar:hover, .descargar:hover {
+  background-color: #110038;
+  outline: 1px dotted #fff;
+  outline-offset: -4px;
+}
+
+.terminos-relacionados button {
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #284F99;
+          box-shadow: inset 2px 2px 0px #fff, inset -2px -2px 0px #284F99;
+  background-color: #4180F6;
+  color: #fff;
+}
+/*# sourceMappingURL=style-night.css.map */
